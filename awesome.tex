@@ -3,29 +3,23 @@
 \usepackage{ngerman}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-  
-%\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm,landscape]{geometry}
+    
 \usepackage[margin=0pt, landscape]{geometry}
 \usepackage{graphics}  
 \usepackage{color}
-
-\usepackage{subfig}
-\usepackage{boxedminipage}
    
-\definecolor{mygray}{gray}{.75}
-\renewcommand{\dots}{\ \dotfill{}\ }
+
 
 \setlength{\unitlength}{1mm}
-
-
-
 \pagestyle{empty}
-
 \setlength{\parindent}{0pt}
+  
+\definecolor{mygray}{gray}{.75}
+\renewcommand{\dots}{\ \dotfill{}\ }
+  
 
    
 \begin{document}
-
 
 \begin{picture}(297,210)
 	\put(10,200){
@@ -35,33 +29,97 @@
 
 			Mod4 + Control + r\dots{}Restart awesome\\
 			Mod4 + F1\dots{}Run prompt\\
-			Mod4 + Control + F4\dots{}Run Lua code prompt\\
+			Mod4 + F4\dots{}Run Lua code prompt\\
 			Mod4 + Return\dots{}Spawn terminal emulator
+			
+			
+			
+			\paragraph{Layout modification} \ \\
+			
+			Mod4 + Button1 on tag name\dots{}Tag current client with this tag only\\
+			Mod4 + Button3 on tag name\dots{}Toggle this tag for client\\
+			Button3 on tag name\dots{}Add this tag to current view\\
+			Mod4 + Button1 on client window\dots{}Move window\\
+			Mod4 + Button3 on client window\dots{}Resize window
+			
+			
+			
+			\paragraph{Clients} \ \\
+			
+			Mod4 + Control + i\dots{}Print the client class and instance\\
+			Mod4 + Shift + r	\dots{}Redraw the focused window\\
+			Mod4 + m\dots{}Maximize client\\
+			Mod4 + f\dots{}Set client fullscreen\\
+			Mod4 + Shift + c\dots{}Kill focused client\\
+			Mod4 + t\dots{}Mark a client			
 		\end{minipage}
 	}
 
 	\put(100,189){
 		\begin{minipage}[t]{80mm}
-			\paragraph{Switching Clients} \ \\
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			\paragraph{Navigation} \ \\
+			
+			Mod4 + j\dots{}Focus next client\\
+			Mod4 + k\dots{}Focus previous client\\
+			Mod4 + u\dots{}Focus first urgent client\\
+			Mod4 + Left\dots{}View previous tag\\
+			Mod4 + Right\dots{}View next tag\\
+			Mod4 + 1-9\dots{}Switch to tag 1-9\\
+			Mod4 + Control + j\dots{}Focus next screen\\
+			Mod4 + Control + k\dots{}Focus previous screen\\
+			Mod4 + Escape\dots{}Focus previously selected tag set\\
+					
+					
+			\paragraph{Layout modification} \ \\
+			
+			Mod4 + Shift + j\dots{}Switch client with next client\\
+			Mod4 + Shift + k\dots{}Switch client with previous client\\
+			Mod4 + h\dots{}Decrease master width factor by 5\%\\
+			Mod4 + l\dots{}Increase master width factor by 5\%\\
+			Mod4 + Shift + h\dots{}Increase number of master windows by 1\\
+			Mod4 + Shift + l\dots{}Decrease number of master windows by 1\\
+			Mod4 + Control + h\dots{}Increase number of columns for non-master windows by 1\\
+			Mod4 + Control + l\dots{}Decrease number of columns for non-master windows by 1\\
+			Mod4 + space\dots{}Switch to next layout\\
+			Mod4 + Shift + space\dots{}Switch to previous layout\\
+			Mod4 + Control + space\dots{}Toggle client floating status\\
+			Mod4 + Control + Return\dots{}Swap focused client with master\\
+			Mod4 + Control + 1-9\dots{}Toggle tag view\\
+			Mod4 + Shift + 1-9\dots{}Tag client with tag\\
+			Mod4 + Shift + Control + 1-9\dots{}Toggle tag on client\\
+			Mod4 + Shift + F1-9\dots{}Tag marked clients with tag
 		\end{minipage}
 	}
 
 	\put(190,189){
 		\begin{minipage}[t]{80mm}
+			\paragraph{Utility Shortcuts} \ \\
+			
+			Windows + F1\dots Run a program. Opens a new window in the current tag thing.\\
+			Windows + H / L\dots	 Increase current “client” or decrease current client width\\
+			Windows Shift K / J	 Rotate clients around in a tag. 1 becomes 2, 2 becomes 3, etc\\
+			Windows + Ctrl + Space	 “maximize” current client.\\
+
+		
 			\paragraph{Switching Clients} \ \\
 
-			A “client” is the term for basically an application window.\\
+			Client = Application window.\ \\
+			
 			Windows + 1\dots{}Go to Tag 1\\
+			Windows + Enter\dots{}Start terminal in current tag (I'll find the correct term later and fix this )\\
+			Windows + Space\dots{}Switch to next layout (like clicking the icon in the upper-right corner)
+			Windows + F\dots{}Maximize current window			
+			Windows + Shift + C\dots{}Close current window			
 
 			\begin{picture}(0,10)
 			  	\linethickness{0,5mm}
-				\put(0,0){\color{mygray}\line(1,0){100}}
+				\put(0,0){\color{mygray}\line(1,0){30}}
 			\end{picture}
 
-			Copyright \copyright{} 2010 Michael Müller\\
-			http://www.micha.elmueller.net/
+			\footnotesize{
+				Copyright \copyright{} 2010 Michael Müller\\
+				http://www.micha.elmueller.net/
+			}
 		\end{minipage}
 	}
 \end{picture}
