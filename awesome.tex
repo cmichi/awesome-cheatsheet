@@ -1,0 +1,71 @@
+\documentclass[DIN, pagenumber=false, parskip=half]{scrartcl}
+ 
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+  
+%\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm,landscape]{geometry}
+\usepackage[margin=0pt, landscape]{geometry}
+\usepackage{graphics}  
+\usepackage{color}
+
+\usepackage{subfig}
+\usepackage{boxedminipage}
+   
+\definecolor{mygray}{gray}{.75}
+\renewcommand{\dots}{\ \dotfill{}\ }
+
+\setlength{\unitlength}{1mm}
+
+
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+
+   
+\begin{document}
+
+
+\begin{picture}(297,210)
+	\put(10,200){
+		\begin{minipage}[t]{80mm}
+			\section*{Awesome Cheat Sheet}
+			\paragraph{Window manager control} \ \\
+
+			Mod4 + Control + r\dots{}Restart awesome\\
+			Mod4 + F1\dots{}Run prompt\\
+			Mod4 + Control + F4\dots{}Run Lua code prompt\\
+			Mod4 + Return\dots{}Spawn terminal emulator
+		\end{minipage}
+	}
+
+	\put(100,189){
+		\begin{minipage}[t]{80mm}
+			\paragraph{Switching Clients} \ \\
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		\end{minipage}
+	}
+
+	\put(190,189){
+		\begin{minipage}[t]{80mm}
+			\paragraph{Switching Clients} \ \\
+
+			A “client” is the term for basically an application window.\\
+			Windows + 1\dots{}Go to Tag 1\\
+
+			\begin{picture}(0,10)
+			  	\linethickness{0,5mm}
+				\put(0,0){\color{mygray}\line(1,0){100}}
+			\end{picture}
+
+			Copyright \copyright{} 2010 Michael Müller\\
+			http://www.micha.elmueller.net/
+		\end{minipage}
+	}
+\end{picture}
+
+
+
+\end{document}
